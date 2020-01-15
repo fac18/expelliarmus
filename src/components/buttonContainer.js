@@ -1,4 +1,4 @@
 import React from 'react';
-import button from './button';
+import Button from './Button';
 
-export default buttonContainer;
+export default ButtonContainer;

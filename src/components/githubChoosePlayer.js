@@ -1,5 +1,5 @@
 import React, { useImperativeHandle } from "react";
-import GithubUser from "./githubUser";
+import GithubUser from "./GithubUser";
 
 const GithubChoosePlayer = ({ users }) => {
   return (
