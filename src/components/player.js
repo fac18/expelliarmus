@@ -1,7 +1,7 @@
 import React from 'react';
-import playerStats from './playerStats';
+import PlayerStats from './PlayerStats';
 
 
-const player
+const Player
 
-export default player;
+export default Player;

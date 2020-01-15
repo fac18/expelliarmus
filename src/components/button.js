@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const button ()
+const Button ()
 
 
-export default button;
+export default Button;

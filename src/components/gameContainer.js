@@ -1,6 +1,6 @@
 import React from 'react';
-import player from './player';
-import textOverlay from './textOverlay';
+import Player from './Player';
+import TextOverlay from './TextOverlay';
 
 
-export default gameContainer;
+export default GameContainer;
