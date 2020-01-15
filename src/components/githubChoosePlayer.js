@@ -1,3 +1,14 @@
-import React from 'react';
+import React, { useImperativeHandle } from "react";
+import GithubUser from "./githubUser";
 
-export default githubChoosePlayer;
+const GithubChoosePlayer = ({ users }) => {
+  return (
+    <ul>
+      {users.map(user => (
+        <GithubUser name={user.name} avatar_url={user.avatar_url} />
+      ))}
+    </ul>
+  );
+};
+
+export default GithubChoosePlayer;

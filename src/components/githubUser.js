@@ -1,5 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const githubUser
+const GithubUser = ({ name, avatar_url }) => {
+  return (
+    <li>
+      <h3>{name}</h3>
+      <img src={avatar_url} />
+    </li>
+  );
+};
 
-export default githubUser;
+export default GithubUser;
