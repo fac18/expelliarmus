@@ -1,14 +1,14 @@
-import React, { useImperativeHandle } from "react";
+import React from "react";
 import GithubUser from "./GithubUser";
 
-const GithubChoosePlayer = ({ users }) => {
-  return (
+const GithubChoosePlayer = ({ allUsers }) => {
+  return allUsers ? (
     <ul>
-      {users.map(user => (
-        <GithubUser name={user.name} avatar_url={user.avatar_url} />
+      {allUsers.map(user => (
+        <GithubUser key={user.login} login={user.login} avatar_url={user.avatar_url} /> // unique key required for top-level element to track its place
       ))}
     </ul>
-  );
+  ) : null; // return null, if no data
 };
 
 export default GithubChoosePlayer;

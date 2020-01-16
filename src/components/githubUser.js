@@ -1,10 +1,10 @@
 import React from "react";
 
-const GithubUser = ({ name, avatar_url }) => {
+const GithubUser = ({ login, avatar_url }) => {
   return (
     <li>
-      <h3>{name}</h3>
-      <img src={avatar_url} />
+      <h3>{login}</h3>
+      <img src={avatar_url}/>
     </li>
   );
 };
