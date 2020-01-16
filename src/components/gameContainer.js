@@ -14,6 +14,8 @@ const GameContainer = ({ user }) => {
 
   const [currentSpell, setCurrentSpell] = React.useState(null);
 
+  const [turnCounter, setTurnCounter] = React.useState(1);
+
   React.useEffect(() => {
     getSpellsData().then(res => setSpellsData(res));
   }, []);
@@ -26,17 +28,19 @@ const GameContainer = ({ user }) => {
   }, [spellsData]);
 
   console.log({ currentSpell });
+  console.log({turnCounter});
 
   return (
     <section>
       <div>
+        <h3 className="action-text"></h3>
         <Player user={user} health={healthPlayer1} />
         <Player
           user={{ login: "DummyUser", avatar_url: "url" }}
           health={healthPlayer2}
         />
       </div>
-      <ButtonContainer currentSpell={currentSpell} />
+      <ButtonContainer currentSpell={currentSpell} turnCounter={turnCounter} setTurnCounter={setTurnCounter} />
     </section>
   );
 };
