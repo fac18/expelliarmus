@@ -6,16 +6,21 @@ import LoginContainer from "./components/loginContainer";
 import GameContainer from "./components/gameContainer";
 
 function App() {
-  const [user, setUser] = React.useState(null);
-  console.log(user);
+  const [user1, setUser1] = React.useState(null);
+  const [user2, setUser2] = React.useState(null);
 
   return (
     <div>
       <Header />
-      {user ? (
-        <GameContainer user={user} />
+      {user1 && user2 ? (
+        <GameContainer user1={user1} user2={user2} />
       ) : (
-        <LoginContainer user={user} setUser={setUser} />
+        <LoginContainer
+          user1={user1}
+          setUser1={setUser1}
+          user2={user2}
+          setUser2={setUser2}
+        />
       )}
     </div>
   );

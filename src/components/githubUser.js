@@ -1,10 +1,13 @@
 import React from "react";
+import "./githubUser.css";
 
 const GithubUser = ({ login, avatar_url, setUser }) => {
   return (
     <li
-      onClick={() => {
+      onClick={event => {
         setUser({ login, avatar_url });
+        console.log(event);
+        event.target.classList.add("user-selected");
       }}
     >
       <h3>{login}</h3>

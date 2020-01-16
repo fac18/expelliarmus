@@ -2,7 +2,7 @@ import React from "react";
 import GithubChooseOrg from "./githubChooseOrg";
 import GithubChoosePlayer from "./githubChoosePlayer";
 
-const LoginContainer = ({ user, setUser }) => {
+const LoginContainer = ({ user1, setUser1, user2, setUser2 }) => {
   const [organisation, setOrganisation] = React.useState(null);
   const [team, setTeam] = React.useState(null);
 
@@ -10,6 +10,10 @@ const LoginContainer = ({ user, setUser }) => {
 
   return (
     <section>
+      <p>
+        Welcome to Expelliarmus! With a classmate find your Github user profile
+        and duel.... to the death!!
+      </p>
       <GithubChooseOrg
         organisation={organisation}
         setOrganisation={setOrganisation}
@@ -17,7 +21,11 @@ const LoginContainer = ({ user, setUser }) => {
         setTeam={setTeam}
         setAllUsers={setAllUsers}
       />
-      <GithubChoosePlayer allUsers={allUsers} setUser={setUser} />
+      <GithubChoosePlayer
+        allUsers={allUsers}
+        setUser1={setUser1}
+        setUser2={setUser2}
+      />
     </section>
   );
 };

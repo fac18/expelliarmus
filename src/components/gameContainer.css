@@ -1,0 +1,13 @@
+.action-text {
+  text-align: center;
+}
+
+.players {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-container {
+  text-align: center;
+}
