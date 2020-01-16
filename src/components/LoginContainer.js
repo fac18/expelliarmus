@@ -8,7 +8,7 @@ const LoginContainer = ({ user, setUser }) => {
 
   const [allUsers, setAllUsers] = React.useState(null);
 
-  console.log(user);
+  console.log(organisation);
 
   return (
     <section>

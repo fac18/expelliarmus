@@ -9,6 +9,10 @@ const ChooseOrg = ({
   setAllUsers
 }) => {
   return (
+    <form onSubmit={(event) => {
+      event.preventDefault();
+      getGithubData(organisation, team).then(res => setAllUsers(res));
+    }}>
     <fieldset>
       <legend>Enter your Github Organisation and Team</legend>
       <label htmlFor="organisation-input">Organisation</label>
@@ -29,14 +33,9 @@ const ChooseOrg = ({
         onChange={event => setTeam(event.target.value)}
         required
       ></input>
-      <button
-        onClick={() => {
-          getGithubData(organisation, team).then(res => setAllUsers(res));
-        }}
-      >
-        Submit
-      </button>
+      <input type="submit" value="Submit"></input>
     </fieldset>
+    </form>
   );
 };
 

@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
-import LoginContainer from "./components/LoginContainer";
-import GameContainer from "./components/GameContainer";
+import Header from "./components/header";
+import LoginContainer from "./components/loginContainer";
+import GameContainer from "./components/gameContainer";
 
 function App() {
   const [user, setUser] = React.useState(null);
