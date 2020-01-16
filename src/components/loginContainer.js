@@ -7,15 +7,16 @@ const LoginContainer = () => {
   const [organisation, setOrganisation] = React.useState(null);
   const [team, setTeam] = React.useState(null);
 
+  const [allUsers, setAllUsers] = React.useState(null);
+
   const [user, setUser] = React.useState(null);
 
-  const userData = getGithubData("FAC18", "students").then(console.log);
-  // console.log(userData);
+  getGithubData("FAC18", "students").then(res => setAllUsers(res));
 
   return (
     <section>
       <GithubChooseOrg setOrganisation={setOrganisation} setTeam={setTeam} />
-      <GithubChoosePlayer users={userData} setUser={setUser} />
+      <GithubChoosePlayer allUsers={allUsers} setUser={setUser} />
     </section>
   );
 };
