@@ -25,9 +25,23 @@ We're buiding a Street Fighter style Harry Potter game! 🧙 🧙
 As a user I want to: 
 - Enter my Github organisation and team to see a list of team members' names and avatars
 - Select player by clicking name or avatar to enter the game
-- Cast soell by clicking a button to attack my opponent and receive feedback via a progress bar on how I've reduced their health
-- Eat a chocolate frog by clicking a button to increase my own health and see how  much it has changed on a progress bar
-- See when the game is over
+- Click a button to cast a spell attacking my opponent and receive feedback via a progress bar on how I've reduced their health
+- Click a button to eat a chocolate frog and increase my own health and - see how much it has changed on a progress bar
+- Know when my turn has ended
+- See when the game is over (when a player reaches 0 health)
+
+## Stretch Goals
+
+- vary levels of attack - ie. different spells reduce health by varying degrees
+- animation
+- a few specific spells return a specific corresponding visual response  
+- add sounds
+- add more buttons to charm or curse
+
+##
+
+
+- Be prompted to play again
 
 
 
