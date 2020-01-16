@@ -15,7 +15,13 @@ const LoginContainer = () => {
 
   return (
     <section>
-      <GithubChooseOrg setOrganisation={setOrganisation} setTeam={setTeam} />
+      {console.log({ team }, { organisation })}
+      <GithubChooseOrg
+        organisation={organisation}
+        setOrganisation={setOrganisation}
+        team={team}
+        setTeam={setTeam}
+      />
       <GithubChoosePlayer allUsers={allUsers} setUser={setUser} />
     </section>
   );
