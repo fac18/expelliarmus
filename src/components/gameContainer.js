@@ -18,8 +18,6 @@ const GameContainer = ({ user1, user2 }) => {
 
   const [gameOver, setGameOver] = React.useState(false);
 
-  console.log({ mostRecentMove });
-
   //get all spells
   React.useEffect(() => {
     getSpellsData().then(res => setSpellsData(res));
@@ -33,7 +31,7 @@ const GameContainer = ({ user1, user2 }) => {
     }
   }, [spellsData]);
 
-  //rerun every turn
+  //rerun every turn: get new spell, calculate effect of previous turn on health
   React.useEffect(() => {
     if (spellsData) {
       const randomSpellIndex = Math.floor(Math.random() * spellsData.length);
@@ -60,15 +58,15 @@ const GameContainer = ({ user1, user2 }) => {
       } else {
         setHealthPlayer2(healthPlayer2 + healthPointsChange);
       }
-
-      console.log({ healthPlayer1, healthPlayer2 });
-
-      //check if game is over
-      if (healthPlayer1 <= 0 || healthPlayer2 <= 0) {
-        setGameOver(true);
-      }
     }
   }, [turnCounter]);
+
+  //checks if game is over whenever player health changes (in case one was killed)
+  React.useEffect(() => {
+    if (healthPlayer1 <= 0 || healthPlayer2 <= 0) {
+      setGameOver(true);
+    }
+  }, [healthPlayer1, healthPlayer2]);
 
   return (
     <section>
@@ -97,6 +95,7 @@ const GameContainer = ({ user1, user2 }) => {
           turnCounter={turnCounter}
           setTurnCounter={setTurnCounter}
           setMostRecentMove={setMostRecentMove}
+          gameOver={gameOver}
         />
       </div>
     </section>

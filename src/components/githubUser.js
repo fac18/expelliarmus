@@ -6,7 +6,6 @@ const GithubUser = ({ login, avatar_url, setUser }) => {
     <li
       onClick={event => {
         setUser({ login, avatar_url });
-        console.log(event);
         event.target.classList.add("user-selected");
       }}
     >
