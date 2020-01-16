@@ -1,6 +1,6 @@
 import React from "react";
-import GithubChooseOrg from "./GithubChooseOrg";
-import GithubChoosePlayer from "./GithubChoosePlayer";
+import GithubChooseOrg from "./githubChooseOrg";
+import GithubChoosePlayer from "./githubChoosePlayer";
 
 const LoginContainer = ({ user, setUser }) => {
   const [organisation, setOrganisation] = React.useState(null);
