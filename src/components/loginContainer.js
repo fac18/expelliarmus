@@ -8,8 +8,6 @@ const LoginContainer = ({ user, setUser }) => {
 
   const [allUsers, setAllUsers] = React.useState(null);
 
-  console.log(organisation);
-
   return (
     <section>
       <GithubChooseOrg
