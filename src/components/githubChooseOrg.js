@@ -1,6 +1,13 @@
 import React from "react";
+import getGithubData from "../utils/getGithubData";
 
-const ChooseOrg = ({ organisation, setOrganisation, team, setTeam }) => {
+const ChooseOrg = ({
+  organisation,
+  setOrganisation,
+  team,
+  setTeam,
+  setAllUsers
+}) => {
   return (
     <fieldset>
       <legend>Enter your Github Organisation and Team</legend>
@@ -20,7 +27,13 @@ const ChooseOrg = ({ organisation, setOrganisation, team, setTeam }) => {
         onChange={event => setTeam(event.target.value)}
         required
       ></input>
-      <button>Submit</button>
+      <button
+        onClick={() => {
+          getGithubData(organisation, team).then(res => setAllUsers(res));
+        }}
+      >
+        Submit
+      </button>
     </fieldset>
   );
 };

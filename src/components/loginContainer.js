@@ -1,7 +1,6 @@
 import React from "react";
 import GithubChooseOrg from "./GithubChooseOrg";
 import GithubChoosePlayer from "./GithubChoosePlayer";
-import getGithubData from "../utils/getGithubData";
 
 const LoginContainer = () => {
   const [organisation, setOrganisation] = React.useState(null);
@@ -11,16 +10,16 @@ const LoginContainer = () => {
 
   const [user, setUser] = React.useState(null);
 
-  getGithubData("FAC18", "students").then(res => setAllUsers(res));
+  console.log(user);
 
   return (
     <section>
-      {console.log({ team }, { organisation })}
       <GithubChooseOrg
         organisation={organisation}
         setOrganisation={setOrganisation}
         team={team}
         setTeam={setTeam}
+        setAllUsers={setAllUsers}
       />
       <GithubChoosePlayer allUsers={allUsers} setUser={setUser} />
     </section>
