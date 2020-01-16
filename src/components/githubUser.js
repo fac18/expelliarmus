@@ -1,4 +1,5 @@
 import React from "react";
+import "./githubUser.css";
 
 const GithubUser = ({ login, avatar_url, setUser }) => {
   return (

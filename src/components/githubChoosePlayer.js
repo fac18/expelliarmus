@@ -1,5 +1,6 @@
 import React from "react";
 import GithubUser from "./githubUser";
+import "./githubChoosePlayer.css";
 
 const GithubChoosePlayer = ({ allUsers, setUser }) => {
   return allUsers ? (

@@ -10,6 +10,10 @@ const LoginContainer = ({ user, setUser }) => {
 
   return (
     <section>
+      <p>
+        Welcome to Expelliarmus! With a classmate find your Github user profile
+        and duel.... to the death!!
+      </p>
       <GithubChooseOrg
         organisation={organisation}
         setOrganisation={setOrganisation}
