@@ -2,26 +2,25 @@ import React from "react";
 import Button from "./button";
 
 const ButtonContainer = ({
-  currentSpell,
   turnCounter,
   setTurnCounter,
   setMostRecentMove,
-  setHealthPlayer1,
-  setHealthPlayer2
+  gameOver
 }) => {
   return (
     <div>
       <Button
-        currentSpell={currentSpell}
         turnCounter={turnCounter}
         setTurnCounter={setTurnCounter}
         setMostRecentMove={setMostRecentMove}
+        gameOver={gameOver}
         text="Cast Spell"
       ></Button>
       <Button
         turnCounter={turnCounter}
         setTurnCounter={setTurnCounter}
         setMostRecentMove={setMostRecentMove}
+        gameOver={gameOver}
         text="Eat Chocolate Frog"
       ></Button>
     </div>
