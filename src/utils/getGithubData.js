@@ -9,6 +9,9 @@ const checkResponse = res => {
 };
 
 const getGithubData = async (org, team) => {
+  console.log(
+    `https://api.github.com/orgs/${org}/teams/${team}?access_token=${tokens.gh_token}`
+  );
   const teamData = await fetch(
     `https://api.github.com/orgs/${org}/teams/${team}?access_token=${tokens.gh_token}`
   )
@@ -30,21 +33,9 @@ const getGithubData = async (org, team) => {
     .then(res => {
       return res.json();
     })
-    // .then(res => {
-    //   const userData = res.map(user => ({
-    //     login: user.login,
-    //     avatar_url: user.avatar_url
-    //   }));
-    //   return userData;
-    // })
     .catch(err => {
       throw new Error(`fetch users failed ${err}`);
     });
-
-  //   const userData = users.map(user => ({
-  //     login: user.login,
-  //     avatar_url: user.avatar_url
-  //   }));
 
   return users;
 };
