@@ -11,7 +11,27 @@ export const tokens = {
   gh_token: "YOURTOKENHERE",
   hp_token: "YOURTOKENHERE"
 };
+
+If you're code-reviewing our project you can ask us for our tokens on Slack, to make things quicker.
+
 ```
+
+## About Expelliarmus
+
+We're buiding a Street Fighter style Harry Potter game! 🧙 🧙
+
+### User Stories:
+
+As a user I want to: 
+- Enter my Github organisation and team to see a list of team members' names and avatars
+- Select player by clicking name or avatar to enter the game
+- Cast soell by clicking a button to attack my opponent and receive feedback via a progress bar on how I've reduced their health
+- Eat a chocolate frog by clicking a button to increase my own health and see how  much it has changed on a progress bar
+- See when the game is over
+
+
+
+// create react app readme below
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
