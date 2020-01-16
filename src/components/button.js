@@ -1,10 +1,17 @@
 import React from "react";
 
-const Button = ({ points, currentSpell, text, turnCounter, setTurnCounter }) => {
+const Button = ({
+  currentSpell,
+  text,
+  turnCounter,
+  setTurnCounter,
+  setMostRecentMove
+}) => {
   return (
     <button
       onClick={() => {
-        console.log({ currentSpell })
+        console.log({ currentSpell });
+        setMostRecentMove(text);
         setTurnCounter(turnCounter + 1);
       }}
     >
