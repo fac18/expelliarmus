@@ -20,6 +20,9 @@ If you're code-reviewing our project you can ask us for our tokens on Slack, to 
 
 We're buiding a Street Fighter style Harry Potter game! 🧙 🧙
 
+Grab a friend, find your Github user profile (by searching for your organisation (e.g. foundersandcoders) and team (e.g. FAC18), and get ready to work some devious duelling magic.
+
+
 ### User Stories:
 
 As a user I want to: 
@@ -38,11 +41,17 @@ As a user I want to:
 - add sounds
 - add more buttons to charm or curse
 
-##
+## Data flow diagram
+
+How the data moves around the components!
+
+[](https://imgur.com/uMhgauZ)
 
 
-- Be prompted to play again
+## Things we've learned
 
+- REACT!!!!
+- REACT TESTING!!!!! (kind of)
 
 
 // create react app readme below
