@@ -86,6 +86,11 @@ const GameContainer = ({ user1, user2 }) => {
           <Player user={user2} health={healthPlayer2} />
         </div>
       </div>
+      {gameOver ? null : (
+        <p className="player-to-move">
+          Player {turnCounter % 2 === 1 ? "1" : "2"} to move
+        </p>
+      )}
       <div className="button-container">
         <ButtonContainer
           currentSpell={currentSpell}
