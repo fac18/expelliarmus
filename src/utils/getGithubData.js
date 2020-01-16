@@ -9,9 +9,6 @@ const checkResponse = res => {
 };
 
 const getGithubData = async (org, team) => {
-  console.log(
-    `https://api.github.com/orgs/${org}/teams/${team}?access_token=${tokens.gh_token}`
-  );
   const teamData = await fetch(
     `https://api.github.com/orgs/${org}/teams/${team}?access_token=${tokens.gh_token}`
   )
