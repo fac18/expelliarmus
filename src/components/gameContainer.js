@@ -3,10 +3,10 @@ import Player from "./player";
 import getSpellsData from "../utils/getSpellsData";
 import TextOverlay from "./textOverlay";
 import ButtonContainer from "./buttonContainer";
-import { clearConfigCache } from "prettier";
+import "./gameContainer.css";
 
 //user is an object which contains the github login and the avatar url
-const GameContainer = ({ user }) => {
+const GameContainer = ({ user1, user2 }) => {
   const [healthPlayer1, setHealthPlayer1] = React.useState(70);
   const [healthPlayer2, setHealthPlayer2] = React.useState(70);
 
@@ -81,18 +81,19 @@ const GameContainer = ({ user }) => {
             ? currentSpell
             : "Ate a chocolate frog!!!"}
         </h3>
-        <Player user={user} health={healthPlayer1} />
-        <Player
-          user={{ login: "DummyUser", avatar_url: "url" }}
-          health={healthPlayer2}
+        <div className="players">
+          <Player user={user1} health={healthPlayer1} />
+          <Player user={user2} health={healthPlayer2} />
+        </div>
+      </div>
+      <div className="button-container">
+        <ButtonContainer
+          currentSpell={currentSpell}
+          turnCounter={turnCounter}
+          setTurnCounter={setTurnCounter}
+          setMostRecentMove={setMostRecentMove}
         />
       </div>
-      <ButtonContainer
-        currentSpell={currentSpell}
-        turnCounter={turnCounter}
-        setTurnCounter={setTurnCounter}
-        setMostRecentMove={setMostRecentMove}
-      />
     </section>
   );
 };
