@@ -1,3 +1,18 @@
+
+## Installation
+
+You will need a file called 'token.js' in your src folder, with API tokens for
+1) (Github)[https://github.com/settings/tokens]
+2) (Harry Potter API)[https://www.potterapi.com/]
+
+in the following format:
+```
+export const tokens = {
+  gh_token: "YOURTOKENHERE",
+  hp_token: "YOURTOKENHERE"
+};
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
