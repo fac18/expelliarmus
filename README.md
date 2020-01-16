@@ -45,7 +45,7 @@ As a user I want to:
 
 How the data moves around the components!
 
-[](https://imgur.com/uMhgauZ)
+![](https://imgur.com/uMhgauZ.jpg)
 
 
 ## Things we've learned
