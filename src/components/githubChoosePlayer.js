@@ -6,7 +6,7 @@ const GithubChoosePlayer = ({ allUsers, setUser1, setUser2 }) => {
   return allUsers ? (
     <section>
       <h3>Choose Player 1</h3>
-      <ul>
+      <ul id="userList1">
         {allUsers.map(user => (
           <GithubUser
             key={user.login}
@@ -17,7 +17,7 @@ const GithubChoosePlayer = ({ allUsers, setUser1, setUser2 }) => {
         ))}
       </ul>
       <h3>Choose Player 2</h3>
-      <ul>
+      <ul id="userList2">
         {allUsers.map(user => (
           <GithubUser
             key={user.login}
