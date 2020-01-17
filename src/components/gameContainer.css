@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: auto;
   /* padding: 5rem; */
 }
 
@@ -24,4 +25,9 @@ body {
 
 .button-container {
   text-align: center;
+}
+
+.game-container {
+  background-color: rgba(0, 0, 0, 0.589);
+  margin: 0em 2em 2em 2em;
 }

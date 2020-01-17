@@ -69,14 +69,14 @@ const GameContainer = ({ user1, user2 }) => {
   }, [healthPlayer1, healthPlayer2]);
 
   return (
-    <section >
+    <section className="game-container">
       {gameOver ? <TextOverlay text="GAME OVER" /> : null}
       <div>
         <h3 className="action-text">
           {mostRecentMove === null
             ? ""
             : mostRecentMove === "Cast Spell"
-            ? currentSpell
+            ? `"${currentSpell}!" 🔮`
             : "Ate a chocolate frog!!!"}
         </h3>
         <div className="players">
@@ -86,7 +86,7 @@ const GameContainer = ({ user1, user2 }) => {
       </div>
       {gameOver ? null : (
         <p className="player-to-move">
-          Player {turnCounter % 2 === 1 ? "1" : "2"} to move
+          {turnCounter % 2 === 1 ? user1.login : user2.login} to move
         </p>
       )}
       <div className="button-container">

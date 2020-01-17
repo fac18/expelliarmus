@@ -15,6 +15,11 @@ button, .submit-button {
     border: 3px solid var(--jet);
 }
 
+button {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .submit-button {
     margin-left: 3em;
 }
@@ -47,5 +52,6 @@ input::placeholder {
 
 .button-container {
     display: flex;
+    justify-content: space-around;
 }
 
