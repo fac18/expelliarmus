@@ -1,0 +1,15 @@
+.player-stats {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player {
+    display: flex;
+}
+
+.player-avatar {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}

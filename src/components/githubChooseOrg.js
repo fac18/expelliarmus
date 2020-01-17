@@ -1,5 +1,6 @@
 import React from "react";
 import getGithubData from "../utils/getGithubData";
+import './button';
 
 const ChooseOrg = ({
   organisation,
@@ -37,7 +38,7 @@ const ChooseOrg = ({
           onChange={event => setTeam(event.target.value)}
           required
         ></input>
-        <input type="submit" value="Submit"></input>
+        <input type="submit" value="Submit" className="submit-button"></input>
       </fieldset>
     </form>
   );

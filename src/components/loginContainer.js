@@ -10,9 +10,9 @@ const LoginContainer = ({ user1, setUser1, user2, setUser2 }) => {
   const [allUsers, setAllUsers] = React.useState(null);
 
   return (
-    <section>
+    <section className="login-container">
       <p className="form-instruction">
-        Welcome to Expelliarmus! With a classmate find your Github user profile
+        Welcome to Hogwarts!</p><p> With a classmate find your Github user profile
         and duel.... to the death!!
       </p>
       <GithubChooseOrg
