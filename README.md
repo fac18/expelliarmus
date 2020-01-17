@@ -18,7 +18,7 @@ in the following format:
 
 ```	
 
-const tokens = {
+export const tokens = {
   gh_token: "YOURTOKENHERE",	  
   hp_token: "YOURTOKENHERE"
 };
