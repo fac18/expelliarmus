@@ -69,7 +69,7 @@ const GameContainer = ({ user1, user2 }) => {
   }, [healthPlayer1, healthPlayer2]);
 
   return (
-    <section>
+    <section >
       {gameOver ? <TextOverlay text="GAME OVER" /> : null}
       <div>
         <h3 className="action-text">

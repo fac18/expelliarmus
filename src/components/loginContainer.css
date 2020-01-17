@@ -1,12 +1,12 @@
 section {
     color: white;
-    font-family: lumos;
+    font-family: var(--lumos-cinzel);
     font-size: 2rem;
 }
 
 .login-container {
     background-color: rgba(0, 0, 0, 0.589);
-    margin: 2em;
+    margin: 0em 2em 2em 2em;
    
 }
 

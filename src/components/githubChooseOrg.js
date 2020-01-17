@@ -18,7 +18,7 @@ const ChooseOrg = ({
     >
       <fieldset>
         <legend>Enter your Github Organisation and Team</legend>
-        <label htmlFor="organisation-input">Organisation</label>
+        <label htmlFor="organisation-input">Org</label>
         <input
           type="text"
           className="github-input"

@@ -1,23 +1,31 @@
-:root {
-  --jet: rgb(4, 4, 44);
-  --lumos:#DFBC51;
 
+@font-face {
+  font-family: 'lumos';
+  src: url(./fonts/LUMOS.TTF) format('truetype');
 }
 
 @font-face {
-  font-family: 'LUMOS';
-  src: url(./fonts/LUMOS.TTF) format('truetype');
   font-family: 'Parry Hotter';
   src: url(./fonts/ParryHotter.ttf) format('truetype');
 }
 
+:root {
+  /* colours */
+  --jet: rgb(4, 4, 44);
+  --lumos:rgb(255, 205, 53);
+
+  /* fonts */
+  --lumos-cinzel: 'Lumos', 'Cinzel', serif;
+}
+
 * {
-  /* font-family: LUMOS; */
+  font-family: 'cinzel';
+  text-transform: uppercase;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Lumos', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Lumos', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,7 +39,11 @@ code {
 }
 
 section {
-  padding: 3rem;
+  padding: 1rem;
+}
+
+p {
+  font-family: var(--lumos-cinzel)
 }
 
 
