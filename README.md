@@ -1,18 +1,26 @@
 
 ## Installation
 
-We're *almost* there with deploying to Netlify, but for now..
+1. clone the repo git clone https://github.com/fac18/expelliarmus.git
+2. run npm i
+3. we're *almost* there with deploying to Netlify, but for now... set up a token.js file in your root folder - instructions below
+4. check our tests with npm t
+5. start the server with npm start and go to localhost:3000!
 
-You will need a file called '.env' in the root folder, with API tokens for
-1) [Github](https://github.com/settings/tokens)
-2) [Harry Potter API](https://www.potterapi.com/)
+#### token.js
 
-in the following format:
+You will need a file called 'token.js' in your src folder, with API tokens for
+1) (Github)[https://github.com/settings/tokens]	1) [Github](https://github.com/settings/tokens)
+2) (Harry Potter API)[https://www.potterapi.com/]	2) [Harry Potter API](https://www.potterapi.com/)
+
+
+in the following format:	in the following format:
+```	```
+const tokens = {
+  gh_token: "YOURTOKENHERE"	  
+  hp_token: "YOURTOKENHERE"
+};
 ```
-REACT_APP_GH_TOKEN="YOURTOKENHERE"
-REACT_APP_HP_TOKEN="YOURTOKENHERE"
-```
-
 If you're code-reviewing our project you can ask us for our tokens on Slack, to make things quicker.
 
 
