@@ -4,6 +4,7 @@ import "./githubUser.css";
 const GithubUser = ({ login, avatar_url, setUser }) => {
   return (
     <li
+      className={login}
       onClick={event => {
         setUser({ login, avatar_url });
         // event.target.classList.add("user-selected");
