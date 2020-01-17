@@ -5,8 +5,8 @@ const Player = ({ user, health }) => {
   return (
     <div>
       <PlayerStats health={health}/>
-      <p>My name is {user.login}</p>
-      <img src={user.avatar_url}></img>
+      <p className="player">{user.login}</p>
+      <img src={user.avatar_url} alt="player"></img>
     </div>
   );
 };

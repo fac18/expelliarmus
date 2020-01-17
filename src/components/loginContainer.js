@@ -1,6 +1,7 @@
 import React from "react";
 import GithubChooseOrg from "./githubChooseOrg";
 import GithubChoosePlayer from "./githubChoosePlayer";
+import './loginContainer.css'
 
 const LoginContainer = ({ user1, setUser1, user2, setUser2 }) => {
   const [organisation, setOrganisation] = React.useState(null);
@@ -10,7 +11,7 @@ const LoginContainer = ({ user1, setUser1, user2, setUser2 }) => {
 
   return (
     <section>
-      <p>
+      <p className="form-instruction">
         Welcome to Expelliarmus! With a classmate find your Github user profile
         and duel.... to the death!!
       </p>

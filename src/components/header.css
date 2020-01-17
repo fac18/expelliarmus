@@ -1,0 +1,11 @@
+
+  h1 {
+    font-family: Parry Hotter;
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+    letter-spacing: 4rem;
+    color: var(--lumos);
+    /* text-shadow: 5px 5px rgb(22, 49, 66); */
+    /* backdrop-filter: blur(10px); */
+  }

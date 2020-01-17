@@ -43,7 +43,7 @@ const GameContainer = ({ user1, user2 }) => {
     const healthPointsChange =
       mostRecentMove === "Cast Spell" ? spellPoints : 10;
 
-    if (turnCounter == 1) {
+    if (turnCounter === 1) {
       return;
       //checks if is odd
     } else if (turnCounter % 2 === 1) {
