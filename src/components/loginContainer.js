@@ -64,8 +64,7 @@ const LoginContainer = ({ user1, setUser1, user2, setUser2 }) => {
       <p className="form-instruction">Welcome to Hogwarts!</p>
       <p>
         {" "}
-        With a classmate find your Github user profile and duel.... to the
-        death!!
+        Dare to duel to the death? Wands only, no contact.
       </p>
       <GithubChooseOrg
         organisation={organisation}
