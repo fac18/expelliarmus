@@ -75,7 +75,7 @@ const GameContainer = ({ user1, user2 }) => {
         <h3 className="action-text">
           {mostRecentMove === null
             ? ""
-            : mostRecentMove === "Cast Spell"
+            : mostRecentMove === "Cast a Spell"
             ? `"${currentSpell}!" 🔮`
             : "Ate a chocolate frog!!!"}
         </h3>
@@ -101,6 +101,7 @@ const GameContainer = ({ user1, user2 }) => {
           setHealthPlayer2={setHealthPlayer2}
         />
       </div>
+      <p>"We solemnly swear that we are up to no good"</p>
     </section>
   );
 };
