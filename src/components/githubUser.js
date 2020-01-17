@@ -10,7 +10,7 @@ const GithubUser = ({ login, avatar_url, setUser }) => {
         // event.target.classList.add("user-selected");
       }}
     >
-      <h3>{login}</h3>
+      <h3 className="username-title">{login}</h3>
       <img src={avatar_url} alt="selected github user" />
     </li>
   );

@@ -1,14 +1,18 @@
 img {
-  height: 100px;
+  height: 80px;
   border-radius: 50%;
   border: 3px solid var(--jet);
 }
 
 li {
-  padding: 8px;
+  padding: 6px;
   text-align: center;
 }
 
 .user-selected {
   border: solid 3px var(--lumos);
+}
+
+.username-title {
+  font-size: 0.5em;
 }
