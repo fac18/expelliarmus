@@ -1,14 +1,13 @@
 :root {
   --jet: rgb(4, 4, 44);
-  --lumos:#DFBC51;
-
+  --lumos: #dfbc51;
 }
 
 @font-face {
-  font-family: 'LUMOS';
-  src: url(./fonts/LUMOS.TTF) format('truetype');
-  font-family: 'Parry Hotter';
-  src: url(./fonts/ParryHotter.ttf) format('truetype');
+  font-family: "LUMOS";
+  src: url(./fonts/LUMOS.TTF) format("truetype");
+  font-family: "Parry Hotter";
+  src: url(./fonts/ParryHotter.ttf) format("truetype");
 }
 
 * {
@@ -17,25 +16,20 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Lumos', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Lumos", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Hogwarts-Castle-HD-Wallpaper.jpg);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 section {
   padding: 3rem;
 }
-
-
-
-
-
-
