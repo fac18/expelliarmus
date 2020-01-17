@@ -61,6 +61,8 @@ const GameContainer = ({ user1, user2 }) => {
     }
   }, [turnCounter]);
 
+  console.log({ mostRecentMove }, { turnCounter });
+
   //checks if game is over whenever player health changes (in case one was killed)
   React.useEffect(() => {
     if (healthPlayer1 <= 0 || healthPlayer2 <= 0) {
@@ -75,7 +77,7 @@ const GameContainer = ({ user1, user2 }) => {
         <h3 className="action-text">
           {mostRecentMove === null
             ? ""
-            : mostRecentMove === "Cast a Spell"
+            : mostRecentMove === "Cast Spell"
             ? `"${currentSpell}!" 🔮`
             : "Ate a chocolate frog!!!"}
         </h3>
