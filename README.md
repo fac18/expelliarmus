@@ -1,18 +1,18 @@
 
 ## Installation
 
-You will need a file called 'token.js' in your src folder, with API tokens for
+We're *almost* there with deploying to Netlify, but for now..
+
+You will need a file called '.env' in the root folder, with API tokens for
 1) [Github](https://github.com/settings/tokens)
 2) [Harry Potter API](https://www.potterapi.com/)
 
 in the following format:
 ```
-export const tokens = {
-  gh_token: "YOURTOKENHERE",
-  hp_token: "YOURTOKENHERE"
-};
-
+REACT_APP_GH_TOKEN="YOURTOKENHERE"
+REACT_APP_HP_TOKEN="YOURTOKENHERE"
 ```
+
 If you're code-reviewing our project you can ask us for our tokens on Slack, to make things quicker.
 
 
