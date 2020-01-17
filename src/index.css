@@ -1,6 +1,23 @@
+:root {
+  --jet: rgb(4, 4, 44);
+  --lumos:rgb(255, 230, 1);
+
+}
+
+@font-face {
+  font-family: 'LUMOS';
+  src: local('LUMOS'), url(./fonts/LUMOS.TTF) format('truetype');
+  font-family: 'Parry Hotter';
+  src: url(./fonts/ParryHotter.ttf) format('truetype');
+}
+
+* {
+  /* font-family: LUMOS; */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Lumos', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,3 +28,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+  padding: 3rem;
+}
+
+
+
+
+
+

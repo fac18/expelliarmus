@@ -10,7 +10,7 @@ const GithubUser = ({ login, avatar_url, setUser }) => {
       }}
     >
       <h3>{login}</h3>
-      <img src={avatar_url} />
+      <img src={avatar_url} alt="selected github user"/>
     </li>
   );
 };
