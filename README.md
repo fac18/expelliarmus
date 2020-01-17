@@ -9,18 +9,22 @@
 
 #### token.js
 
-You will need a file called 'token.js' in your src folder, with API tokens for
-1) (Github)[https://github.com/settings/tokens]	1) [Github](https://github.com/settings/tokens)
-2) (Harry Potter API)[https://www.potterapi.com/]	2) [Harry Potter API](https://www.potterapi.com/)
+You will need a file called 'token.js' in your src folder, with API tokens for:
 
+1. [Github](https://github.com/settings/tokens)
+2. [Harry Potter API](https://www.potterapi.com/)
 
-in the following format:	in the following format:
-```	```
+in the following format:	
+
+```	
+
 const tokens = {
-  gh_token: "YOURTOKENHERE"	  
+  gh_token: "YOURTOKENHERE",	  
   hp_token: "YOURTOKENHERE"
 };
+
 ```
+
 If you're code-reviewing our project you can ask us for our tokens on Slack, to make things quicker.
 
 
