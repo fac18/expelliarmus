@@ -96,19 +96,10 @@ const GameContainer = ({ user1, user2 }) => {
           setTurnCounter={setTurnCounter}
           setMostRecentMove={setMostRecentMove}
           gameOver={gameOver}
+          setGameOver={setGameOver}
+          setHealthPlayer1={setHealthPlayer1}
+          setHealthPlayer2={setHealthPlayer2}
         />
-        {gameOver ? (
-          <button
-            onClick={() => {
-              setTurnCounter(1);
-              setHealthPlayer1(70);
-              setHealthPlayer2(70);
-              setGameOver(false);
-            }}
-          >
-            Play again?
-          </button>
-        ) : null}
       </div>
     </section>
   );
