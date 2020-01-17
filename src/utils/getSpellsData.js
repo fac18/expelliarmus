@@ -12,7 +12,6 @@ const checkResponse = res => {
 };
 
 const getSpellsData = () => {
-  console.log(tokens.hp_token);
   const spells = fetch(
     `https://www.potterapi.com/v1/spells?key=${tokens.hp_token}`
   )
