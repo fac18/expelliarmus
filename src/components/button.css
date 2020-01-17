@@ -1,4 +1,14 @@
-button:hover {
+button:hover, .submit-button:hover {
     cursor: pointer;
+}
+
+button, .submit-button {
+    padding: 1em;
+    margin: 0 0 5em 5em;
+    width: 8rem;
+    font-weight: bold;
+    background-color: var(--lumos);
+    box-shadow: 0px 4px 4px var(--jet);
+    text-transform: uppercase;
 }
 

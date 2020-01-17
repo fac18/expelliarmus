@@ -1,12 +1,12 @@
 :root {
   --jet: rgb(4, 4, 44);
-  --lumos:rgb(255, 230, 1);
+  --lumos:#DFBC51;
 
 }
 
 @font-face {
   font-family: 'LUMOS';
-  src: local('LUMOS'), url(./fonts/LUMOS.TTF) format('truetype');
+  src: url(./fonts/LUMOS.TTF) format('truetype');
   font-family: 'Parry Hotter';
   src: url(./fonts/ParryHotter.ttf) format('truetype');
 }
@@ -22,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
