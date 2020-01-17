@@ -1,4 +1,7 @@
-import { tokens } from "../token";
+const tokens = {
+  gh_token: process.env.REACT_APP_GH_TOKEN,
+  hp_token: process.env.REACT_APP_HP_TOKEN
+};
 
 const checkResponse = res => {
   if (res.status !== 200) {
@@ -9,6 +12,7 @@ const checkResponse = res => {
 };
 
 const getSpellsData = () => {
+  console.log(tokens.hp_token);
   const spells = fetch(
     `https://www.potterapi.com/v1/spells?key=${tokens.hp_token}`
   )
